@@ -1,3 +1,4 @@
+import java.lang.Exception
 import java.lang.NullPointerException
 
 fun main(args: Array<String>) {
@@ -129,12 +130,24 @@ fun main(args: Array<String>) {
 //    println(listaFiltrada)
     var nombre : String? = null;
     try {
-        nombre!!.length
+        throw NullPointerException("Ha ocurrido un error");
+
     }catch (exception: NullPointerException){
         println("ERROR.")
     }finally {
         println("Ha ocurrido un error. Cerrando aplicacion.")
     }
+
+    val primerValor = 10;
+    val segundoValor = 0;
+
+    val resultado : Int = try {
+        primerValor / segundoValor
+    }catch (e: Exception){
+        0
+    }
+
+    println(resultado)
 }
 
 
