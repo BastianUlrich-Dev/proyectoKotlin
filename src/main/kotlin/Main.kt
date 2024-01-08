@@ -128,26 +128,31 @@ fun main(args: Array<String>) {
 ////  **FILTER**
 //    val listaFiltrada = caracteresDeFruta.filter { frutaCaracter -> frutaCaracter > 5 }
 //    println(listaFiltrada)
-    var nombre : String? = null;
-    try {
-        throw NullPointerException("Ha ocurrido un error");
+//    var nombre : String? = null;
+//    try {
+//        throw NullPointerException("Ha ocurrido un error");
+//
+//    }catch (exception: NullPointerException){
+//        println("ERROR.")
+//    }finally {
+//        println("Ha ocurrido un error. Cerrando aplicacion.")
+//    }
+//
+//    val primerValor = 10;
+//    val segundoValor = 0;
+//
+//    val resultado : Int = try {
+//        primerValor / segundoValor
+//    }catch (e: Exception){
+//        0
+//    }
+//
+//    println(resultado)
 
-    }catch (exception: NullPointerException){
-        println("ERROR.")
-    }finally {
-        println("Ha ocurrido un error. Cerrando aplicacion.")
-    }
-
-    val primerValor = 10;
-    val segundoValor = 0;
-
-    val resultado : Int = try {
-        primerValor / segundoValor
-    }catch (e: Exception){
-        0
-    }
-
-    println(resultado)
+//    ***OPERADOR ELVIS***
+//        var nombre : String? = null;
+//        val caracteresDeNombre : Int = nombre?.length ?: 0
+//        println(caracteresDeNombre)
 }
 
 
