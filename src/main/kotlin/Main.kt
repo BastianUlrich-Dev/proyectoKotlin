@@ -156,38 +156,64 @@ fun main(args: Array<String>) {
 
 //    **LISTOF**
 //    lista inmutable
-    val listaDeNombre = listOf("Bastian","Enrique","Camila")
-    println(listaDeNombre)
+//    val listaDeNombre = listOf("Bastian","Enrique","Camila")
+//    println(listaDeNombre)
+//
+////    lista mutable
+//    val listaVacia = mutableListOf<String>()
+//    println(listaVacia);
+//
+//    listaVacia.add("Bastian")
+//    println(listaVacia)
+//
+////    obtener datos de la lista con get
+//    val valorUsandoGet = listaVacia.get(0)
+//    println(valorUsandoGet)
+//
+////    obtener datos mediante operador de index
+//    val valorUsandoOperador = listaVacia[0]
+//    println(valorUsandoOperador)
+//
+////    obtener el primer valor con operador first
+//    val primerValor: String? = listaDeNombre.firstOrNull()
+//    println(primerValor)
+//
+//    listaVacia.removeAt(0)
+//    println(listaVacia)
+//
+//    listaVacia.add("Pedro")
+//    println(listaVacia)
+//    listaVacia.removeIf{caracteres -> caracteres.length>3}
+//    println(listaVacia)
+//
+//    val myArray = arrayOf(1,2,3,4,)
+//    println("Mi array ${myArray.toList()}")
 
-//    lista mutable
-    val listaVacia = mutableListOf<String>()
-    println(listaVacia);
+//    ORDENAR LISTAS
+    val numerosDeLoteria = listOf(11,22,43,56,78,66)
 
-    listaVacia.add("Bastian")
-    println(listaVacia)
+    val numerosSorted = numerosDeLoteria.sorted()
+    println(numerosSorted)
 
-//    obtener datos de la lista con get
-    val valorUsandoGet = listaVacia.get(0)
-    println(valorUsandoGet)
+    val numerosDeLoteriaDescendientes = numerosDeLoteria.sortedDescending()
+    println(numerosDeLoteriaDescendientes)
 
-//    obtener datos mediante operador de index
-    val valorUsandoOperador = listaVacia[0]
-    println(valorUsandoOperador)
+    val ordenarPorMultiplos = numerosDeLoteria.sortedBy { numero -> numero < 50 }
+    println(ordenarPorMultiplos)
 
-//    obtener el primer valor con operador first
-    val primerValor: String? = listaDeNombre.firstOrNull()
-    println(primerValor)
+//    lista random
+    val numerosAleatorios = numerosDeLoteria.shuffled()
+    println(numerosAleatorios)
 
-    listaVacia.removeAt(0)
-    println(listaVacia)
+//    lista inversa
+    val numerosEnReversa = numerosDeLoteria.reversed()
+    println(numerosEnReversa)
 
-    listaVacia.add("Pedro")
-    println(listaVacia)
-    listaVacia.removeIf{caracteres -> caracteres.length>3}
-    println(listaVacia)
+    val mensajesDeNumeros = numerosDeLoteria.map { numero -> "Tu numero de loteria es: $numero" }
+    println(mensajesDeNumeros)
 
-    val myArray = arrayOf(1,2,3,4,)
-    println("Mi array ${myArray.toList()}")
+    val numerosFiltrados = numerosDeLoteria.filter { numero -> numero > 50 }
+    println(numerosFiltrados)
 }
 
 
