@@ -153,6 +153,41 @@ fun main(args: Array<String>) {
 //        var nombre : String? = null;
 //        val caracteresDeNombre : Int = nombre?.length ?: 0
 //        println(caracteresDeNombre)
+
+//    **LISTOF**
+//    lista inmutable
+    val listaDeNombre = listOf("Bastian","Enrique","Camila")
+    println(listaDeNombre)
+
+//    lista mutable
+    val listaVacia = mutableListOf<String>()
+    println(listaVacia);
+
+    listaVacia.add("Bastian")
+    println(listaVacia)
+
+//    obtener datos de la lista con get
+    val valorUsandoGet = listaVacia.get(0)
+    println(valorUsandoGet)
+
+//    obtener datos mediante operador de index
+    val valorUsandoOperador = listaVacia[0]
+    println(valorUsandoOperador)
+
+//    obtener el primer valor con operador first
+    val primerValor: String? = listaDeNombre.firstOrNull()
+    println(primerValor)
+
+    listaVacia.removeAt(0)
+    println(listaVacia)
+
+    listaVacia.add("Pedro")
+    println(listaVacia)
+    listaVacia.removeIf{caracteres -> caracteres.length>3}
+    println(listaVacia)
+
+    val myArray = arrayOf(1,2,3,4,)
+    println("Mi array ${myArray.toList()}")
 }
 
 
