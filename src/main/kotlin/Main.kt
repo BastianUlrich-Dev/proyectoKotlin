@@ -271,6 +271,34 @@ fun main(args: Array<String>) {
 //
 //    val valoresDelSet: Int? = numeroFavoritos.firstOrNull(){numero -> numero > 2}
 //    println(valoresDelSet)
+
+////    ***FUNCIONES***
+//
+//    val fraseAleatoria = "En platzi nunca se para de aprender.".randomCase()
+//    imprimirFrase(fraseAleatoria)
+
+    imprimirNombre(nombre = "Bastian",apellido = "Jorquera")
+
+}
+
+
+//FUNCIONES
+fun imprimirFrase(frase: String) : Unit {
+    println("tu fase es: $frase")
+}
+fun String.randomCase() : String {
+    val numeroAleatorio = 0..99
+    val resultadoAleatorio = numeroAleatorio.random();
+    return if (resultadoAleatorio.rem(2) == 0) {
+        this.uppercase()
+    }else{
+        this.lowercase()
+    }
+}
+
+//TIPOS DE PARÁMETROS PARA FUNCIONES
+fun imprimirNombre(nombre: String, segundoNombre: String = "", apellido: String){
+    println("Mi nombre completo es: $nombre $segundoNombre $apellido")
 }
 
 
