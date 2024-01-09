@@ -215,40 +215,62 @@ fun main(args: Array<String>) {
 //    val numerosFiltrados = numerosDeLoteria.filter { numero -> numero > 50 }
 //    println(numerosFiltrados)
 
-//    MAPS
-    val edadSuperheroes = mapOf(
-        "Ironman" to 35,
-        "Spiderman" to 23,
-        "Capitan America" to 99
-    )
-    println(edadSuperheroes)
+////    ***MAPS***
+//    val edadSuperheroes = mapOf(
+//        "Ironman" to 35,
+//        "Spiderman" to 23,
+//        "Capitan America" to 99
+//    )
+//    println(edadSuperheroes)
+//
+//    val edadSuperHeroesMutable = mutableMapOf(
+//        "Ironman" to 35,
+//        "Spiderman" to 23,
+//        "Capitan America" to 99
+//    )
+//
+//    println(edadSuperHeroesMutable)
+//
+//    edadSuperHeroesMutable.put("wolverine", 45)
+//    println(edadSuperHeroesMutable)
+//
+//    edadSuperHeroesMutable["Storm"] = 30
+//
+//    println(edadSuperHeroesMutable)
+//
+//    val edadIronman = edadSuperHeroesMutable["Ironman"]
+//
+//    println(edadIronman)
+//
+//    edadSuperHeroesMutable.remove("wolverine")
+//    println(edadSuperHeroesMutable)
+//
+////  Muestra solo las keys
+//    println(edadSuperHeroesMutable.keys)
+////  Muestra solo los valores
+//    println(edadSuperHeroesMutable.values)
 
-    val edadSuperHeroesMutable = mutableMapOf(
-        "Ironman" to 35,
-        "Spiderman" to 23,
-        "Capitan America" to 99
-    )
-
-    println(edadSuperHeroesMutable)
-
-    edadSuperHeroesMutable.put("wolverine", 45)
-    println(edadSuperHeroesMutable)
-
-    edadSuperHeroesMutable["Storm"] = 30
-
-    println(edadSuperHeroesMutable)
-
-    val edadIronman = edadSuperHeroesMutable["Ironman"]
-
-    println(edadIronman)
-
-    edadSuperHeroesMutable.remove("wolverine")
-    println(edadSuperHeroesMutable)
-
-//  Muestra solo las keys
-    println(edadSuperHeroesMutable.keys)
-//  Muestra solo los valores
-    println(edadSuperHeroesMutable.values)
+//    ***SETS***
+//    Para eliminar duplicados
+//    INMUTABLE
+//    val vocalesRepetidas = setOf("a","e","i","o","u","a","e","i","o","u");
+//    println(vocalesRepetidas)
+//
+////    MUTABLE
+//    val numeroFavoritos = mutableSetOf(1,2,3,4)
+//    println(numeroFavoritos)
+//    numeroFavoritos.add(5)
+//    numeroFavoritos.add(5)
+//    numeroFavoritos.add(5)
+//    println(numeroFavoritos)
+////    ELIMINAR ELEMENTOS
+////    SE LE ENTREGA EL VALOR. NO EL ID O LA KEY.
+//    numeroFavoritos.remove(5)
+//    println(numeroFavoritos)
+//
+//
+//    val valoresDelSet: Int? = numeroFavoritos.firstOrNull(){numero -> numero > 2}
+//    println(valoresDelSet)
 }
 
 
