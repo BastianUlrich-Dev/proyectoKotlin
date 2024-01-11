@@ -277,8 +277,18 @@ fun main(args: Array<String>) {
 //    val fraseAleatoria = "En platzi nunca se para de aprender.".randomCase()
 //    imprimirFrase(fraseAleatoria)
 
-    imprimirNombre(nombre = "Bastian",apellido = "Jorquera")
+//    imprimirNombre(nombre = "Bastian",apellido = "Jorquera")
 
+
+//    ***LAMBDAS***
+
+    val myLambda : (String) -> Int = {valor -> valor.length}
+    val lambdaEjecutada = myLambda("Hola mundo");
+    println(lambdaEjecutada)
+
+    val saludos = listOf("hola","hello")
+    val longitud = saludos.map(myLambda)
+    println(longitud)
 }
 
 
