@@ -300,12 +300,20 @@ fun main(args: Array<String>) {
 //        valor -> println("El nombre no es nulo, es $valor")
 //    }
 
-//    ***FUNCION WIDTH***
-        val colores = listOf("azul","amarillo","rojo")
-    with(colores){
-        println("Nuestros colores son $this")
-        println("Esta lista tiene una cantidad de colores de $size")
-    }
+////    ***FUNCION WIDTH***
+//        val colores = listOf("azul","amarillo","rojo")
+//    with(colores){
+//        println("Nuestros colores son $this")
+//        println("Esta lista tiene una cantidad de colores de $size")
+//    }
+
+////    ***FUNCION RUN***
+//    val moviles = mutableListOf("google pizel","google pixel 4a", "huawei","Xiaomi")
+//        .run{
+//            removeIf{movil -> movil.contains("google")}
+//            this
+//        }
+//    println(moviles)
 
 }
 
