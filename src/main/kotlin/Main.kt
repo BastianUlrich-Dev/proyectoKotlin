@@ -281,14 +281,24 @@ fun main(args: Array<String>) {
 
 
 //    ***LAMBDAS***
+//
+//    val myLambda : (String) -> Int = {valor -> valor.length}
+//    val lambdaEjecutada = myLambda("Hola mundo");
+//    println(lambdaEjecutada)
+//
+//    val saludos = listOf("hola","hello")
+//    val longitud = saludos.map(myLambda)
+//    println(longitud)
 
-    val myLambda : (String) -> Int = {valor -> valor.length}
-    val lambdaEjecutada = myLambda("Hola mundo");
-    println(lambdaEjecutada)
-
-    val saludos = listOf("hola","hello")
-    val longitud = saludos.map(myLambda)
-    println(longitud)
+////    ***FUNCION LET***
+//    var nombre : String? = null
+//    nombre?.let{
+//        valor -> println("El nombre no es nulo. es $valor")
+//    }
+//    nombre = "Bastian"
+//    nombre?.let {
+//        valor -> println("El nombre no es nulo, es $valor")
+//    }
 }
 
 
