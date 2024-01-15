@@ -315,6 +315,12 @@ fun main(args: Array<String>) {
 //        }
 //    println(moviles)
 
+//    ***FUNCION APPLY***
+        val moviles = mutableListOf("google pizel","google pixel 4a", "huawei","Xiaomi")
+        .apply{
+            removeIf{movil -> movil.contains("google")}
+        }
+    println(moviles)
 }
 
 
