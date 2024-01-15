@@ -299,6 +299,14 @@ fun main(args: Array<String>) {
 //    nombre?.let {
 //        valor -> println("El nombre no es nulo, es $valor")
 //    }
+
+//    ***FUNCION WIDTH***
+        val colores = listOf("azul","amarillo","rojo")
+    with(colores){
+        println("Nuestros colores son $this")
+        println("Esta lista tiene una cantidad de colores de $size")
+    }
+
 }
 
 
